@@ -15,6 +15,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Settings");
     }*/
 
+    public void SkillTree() 
+    {
+        SceneManager.LoadScene("Skill Tree");
+    }
+
     public void Quit()
     {
         Application.Quit();
