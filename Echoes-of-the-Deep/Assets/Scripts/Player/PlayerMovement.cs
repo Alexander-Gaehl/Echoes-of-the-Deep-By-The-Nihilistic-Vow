@@ -5,8 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-
     Rigidbody2D body;
+
+    public Animator animator;
+
+    SpriteRenderer sprite; 
 
     float horizontal;
 
@@ -22,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
         body = GetComponent<Rigidbody2D>();
 
+        sprite = GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
@@ -34,29 +39,53 @@ public class PlayerMovement : MonoBehaviour
         // -1 is left 1 is right
 
         vertical = Input.GetAxisRaw("Vertical");
-        
+
         // -1 is down 1 is up
 
 
+        Debug.Log("Script Input -> Horiz: " + Mathf.Abs(horizontal) + " Vert: " + vertical);
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            animator.SetFloat("Horizontal", Mathf.Abs(horizontal));
+            animator.SetFloat("Vertical", vertical);
+        }
+
+        // Flip the sprite based on the direction of movement
+
+        if (horizontal < 0)
+        {
+            // Flip the sprite to face left
+
+            sprite.flipX = true;
+        }
+        else if (horizontal > 0)
+        {
+            // Flip the sprite to face right
+
+            sprite.flipX = false;
+        }
     }
 
     void FixedUpdate()
     {
+        float currentHorizontal = horizontal;
+        float currentVertical = vertical;
 
-        if (horizontal != 0 && vertical != 0)
+        if (currentHorizontal != 0 && currentVertical != 0)
         {
 
             // Check for diagonal movement
 
             // limit movement speed diagonally, so you move at a pace that feels right
 
-            horizontal *= moveLimiter;
+            currentHorizontal *= moveLimiter;
             
-            vertical *= moveLimiter;
+            currentVertical *= moveLimiter;
 
         }
 
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        body.velocity = new Vector2(currentHorizontal * runSpeed, currentVertical * runSpeed);
 
 
     }
