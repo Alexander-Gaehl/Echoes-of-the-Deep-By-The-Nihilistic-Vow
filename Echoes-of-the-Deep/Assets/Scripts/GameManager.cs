@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour
     public bool radDev;
     public bool mutDev;
 
-    public int tempDevAmnt;
-    public int RadDevAmnt;
-    public int MutDevAmnt;
+    public int TempDevAmnt = 0;
+    public int RadDevAmnt = 0;
+    public int MutDevAmnt = 0;
 
     public TextMeshProUGUI m_TempDevAmnt;
     public TextMeshProUGUI m_RadDevAmnt;
@@ -42,5 +42,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DontDestroyOnLoad(gameObject);
+
+        m_TempDevAmnt.text = ($"Temp {TempDevAmnt}");
+        m_RadDevAmnt.text = ($"Rad {RadDevAmnt}");
+        m_MutDevAmnt.text = ($"Mut {MutDevAmnt}");
+
     }
 }
