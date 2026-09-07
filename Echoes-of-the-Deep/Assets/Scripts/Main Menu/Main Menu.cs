@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Play() 
     {
+        //This loads the next scene of the build order.
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -14,6 +15,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Settings");
     }*/
+
+    public void SkillTree() 
+    {
+        //This makes it go the Skill Tree scene itself.
+        SceneManager.LoadScene("Skill Tree");
+    }
 
     public void Quit()
     {
