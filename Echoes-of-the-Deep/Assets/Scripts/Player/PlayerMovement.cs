@@ -42,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
 
         // -1 is down 1 is up
 
+        // Calculate the movement speed based on the horizontal and vertical input
+        float movementSpeed = new Vector2(horizontal, vertical).sqrMagnitude;
+
+        animator.SetFloat("Speed", movementSpeed);
 
         Debug.Log("Script Input -> Horiz: " + Mathf.Abs(horizontal) + " Vert: " + vertical);
 
