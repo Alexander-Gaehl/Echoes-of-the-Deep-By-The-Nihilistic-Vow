@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,8 +72,8 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
+    textureCompression: 3
+    compressionQuality: 13
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -95,7 +95,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62318108be40e734f9bf96df1bd2562f
+      internalID: 1482380663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 92
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae0feb7ccfbc904a9bc4b4a216b5562
+      internalID: -964715204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ae3260f7e1e4942b486dea52873222
+      internalID: 778714112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efc073db5ebe2e40b37a7dcc6469f07
+      internalID: -579208068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 0
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b619d5f4eaf941b2feda2aa79e8d3
+      internalID: 647707576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 0
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595e91b542da3824ea53e32dfcee7af2
+      internalID: -11425188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75bc27b0aa221b49b5674b134c5692e
+      internalID: -352776203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Monster_A_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 0
+        width: 91
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c1efb3037f0fb489c3a18dc8c39be5
+      internalID: 313984437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +274,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blood Monster_A_Walk_0: 1482380663
+      Blood Monster_A_Walk_1: -964715204
+      Blood Monster_A_Walk_2: 778714112
+      Blood Monster_A_Walk_3: -579208068
+      Blood Monster_A_Walk_4: 647707576
+      Blood Monster_A_Walk_5: -11425188
+      Blood Monster_A_Walk_6: -352776203
+      Blood Monster_A_Walk_7: 313984437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
