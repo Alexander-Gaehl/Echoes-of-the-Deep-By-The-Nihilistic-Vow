@@ -35,14 +35,20 @@ public class EnemyMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        follow = true;
+        if (collision.tag == "Player")
+        {
+            follow = true;
+        }
 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
 
-        follow = false;
+        if (collision.tag == "Player")
+        {
+            follow = false;
+        }
 
     }
 
