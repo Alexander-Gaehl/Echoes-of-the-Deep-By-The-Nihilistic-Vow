@@ -57,20 +57,31 @@ public class EnemyMovement : MonoBehaviour
         // If the enemy is within attack range, stop moving and attack
         if (follow && distanceToPlayer <= attackRange)
         {
+            Debug.Log($"Enemy is within attack range: {distanceToPlayer}. Stopping movement and preparing to attack.");
+
             // Stop moving
             animator.SetFloat("Speed", 0);
 
             // Handle attack cooldown
             HandleSpriteFlipping();
 
-            if (Time.time >= attackTimer && enemyAttack != null)
+            if (Time.time >= attackTimer)
             {
-                // Trigger the attack
-                enemyAttack.TriggerAttack();
+                if (enemyAttack != null)
+                {
+                    Debug.Log("Enemy Debug: Condition met for attack.");
 
-                // Reset the attack timer
-                attackTimer = Time.time + attackCooldown;
-            }
+                    // Trigger the attack
+                    enemyAttack.TriggerAttack();
+
+                    // Reset the attack timer
+                    attackTimer = Time.time + attackCooldown;
+                }
+                else
+                {
+                    Debug.LogWarning("Enemy Debug: EnemyAttack component is missing.");
+                }
+            } 
             else
             {
                 // If the enemy is not ready to attack, just stop moving
