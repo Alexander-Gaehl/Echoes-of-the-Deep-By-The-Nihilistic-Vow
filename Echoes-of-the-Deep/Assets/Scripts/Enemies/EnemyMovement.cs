@@ -138,7 +138,6 @@ public class EnemyMovement : MonoBehaviour
         // TEMPORARY LOG - Paste this right before your "if (follow && distanceToPlayer <= attackRange)" check
         Debug.Log($"[RADAR LOG] Follow Status: {follow} | Distance: {distanceToPlayer:F2} | Required Attack Range: {attackRange}");
 
-
         // Move towards the player if follow is true and the enemy is not within attack range   
         if (follow && distanceToPlayer > attackRange)
         {
