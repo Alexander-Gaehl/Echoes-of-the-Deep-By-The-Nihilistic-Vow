@@ -22,7 +22,9 @@ public class EnemyAttack : MonoBehaviour
     public void TriggerAttack()
     {
         anim.SetTrigger("Attack");
+        Debug.Log("Animator Trigger Called!"); 
     }
+
 
     public void DealDamage()
     {
@@ -54,5 +56,4 @@ public class EnemyAttack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-
 }
