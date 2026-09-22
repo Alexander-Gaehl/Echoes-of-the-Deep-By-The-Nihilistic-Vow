@@ -10,7 +10,7 @@ public class EnemyAttack : MonoBehaviour
     public Transform attackPoint; // The point from which the attack is initiated
     public float attackRange = 0.5f; // The range of the attack
     public LayerMask playerLayer; // The layer that the player is on
-    public float damage = 20; // The amount of damage the attack does
+    public float damage = 20f; // The amount of damage the attack does
 
     // Start is called before the first frame update
     void Start()

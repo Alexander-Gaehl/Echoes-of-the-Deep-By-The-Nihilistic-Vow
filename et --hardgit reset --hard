@@ -1,0 +1,33 @@
+[33made8347[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: commit (merge): Merge branch 'main' of https://github.com/Alexander-Gaehl/Echoes-of-the-Deep-By-The-Nihilistic-Vow
+[33m4e91b20[m HEAD@{1}: commit: istgg
+[33m4e0ad87[m HEAD@{2}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33mb822b39[m HEAD@{3}: commit: enemy now attacks
+[33me3f3822[m HEAD@{4}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33mce15325[m HEAD@{5}: commit: fixed issues
+[33m23e0631[m HEAD@{6}: commit: update enemy movement again?
+[33me29301a[m HEAD@{7}: commit: updating enemy movement
+[33m6dd326c[m HEAD@{8}: commit: enemy attack script
+[33m6835b3d[m[33m ([m[1;31morigin/Area[m[33m)[m HEAD@{9}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33ma4eeed0[m HEAD@{10}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33mcfae031[m HEAD@{11}: commit: enemy idle and walking
+[33m50bbe6e[m HEAD@{12}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33m70d5d96[m HEAD@{13}: commit: player attack
+[33m330a900[m HEAD@{14}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33mbc502ad[m HEAD@{15}: commit (merge): Merge branch 'main' of https://github.com/Alexander-Gaehl/Echoes-of-the-Deep-By-The-Nihilistic-Vow
+[33mf5ccc6b[m HEAD@{16}: commit: wuh
+[33mfa56787[m HEAD@{17}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33mc47915a[m HEAD@{18}: commit: this better be the final enemy
+[33mee6652a[m HEAD@{19}: commit: enemy stuff
+[33m01d312b[m HEAD@{20}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33m479109a[m HEAD@{21}: commit: player walk animation
+[33m2af3c50[m HEAD@{22}: pull --ff --recurse-submodules --progress origin: Merge made by the 'ort' strategy.
+[33m6a733ff[m HEAD@{23}: commit: idle character animation done
+[33m5c37c9e[m HEAD@{24}: commit: idk
+[33m631040b[m HEAD@{25}: commit: idle sprite sliced
+[33mef05a84[m HEAD@{26}: commit: idle sprite sheet
+[33m559d6b9[m HEAD@{27}: commit: something something something
+[33m99d9d00[m HEAD@{28}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33ma7ee6c0[m HEAD@{29}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33m7452824[m[33m ([m[1;32mSamira's-branch-[m[33m)[m HEAD@{30}: checkout: moving from Samira's-branch- to main
+[33m7452824[m[33m ([m[1;32mSamira's-branch-[m[33m)[m HEAD@{31}: checkout: moving from main to Samira's-branch-
+[33m7452824[m[33m ([m[1;32mSamira's-branch-[m[33m)[m HEAD@{32}: clone: from https://github.com/Alexander-Gaehl/-Temp-Name-Here---By-The-Nihilistic-Vow.git

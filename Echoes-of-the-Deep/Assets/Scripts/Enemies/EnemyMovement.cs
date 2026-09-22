@@ -90,7 +90,6 @@ public class EnemyMovement : MonoBehaviour
 
             // Flip the sprite based on the direction of movement
             if (follow)
-            if (moveDirection.x > 0)
             {
                 HandleSpriteFlipping();
             }
@@ -135,6 +134,10 @@ public class EnemyMovement : MonoBehaviour
         if (player == null) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // TEMPORARY LOG - Paste this right before your "if (follow && distanceToPlayer <= attackRange)" check
+        Debug.Log($"[RADAR LOG] Follow Status: {follow} | Distance: {distanceToPlayer:F2} | Required Attack Range: {attackRange}");
+
 
         // Move towards the player if follow is true and the enemy is not within attack range   
         if (follow && distanceToPlayer > attackRange)
