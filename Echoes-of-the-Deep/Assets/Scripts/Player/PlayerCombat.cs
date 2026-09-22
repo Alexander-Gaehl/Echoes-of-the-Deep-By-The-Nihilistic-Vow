@@ -42,7 +42,7 @@ public class PlayerCombat : MonoBehaviour
         // Reset combo count if it exceeds the maximum allowed combo
         if (comboCount > 3)
         {
-            comboCount = 1;
+            ResetCombo();
         }
 
         // Update Animator parameters based on combo count
