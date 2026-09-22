@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour
 
     Rigidbody2D rb;
 
+    private Animator animator;
+
     public Transform target;
 
     Vector2 moveDirection;
@@ -20,15 +22,36 @@ public class EnemyMovement : MonoBehaviour
         
         rb = GetComponent<Rigidbody2D>();
 
+        animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (target == null)
+        {
+            return;
+        }
+
         Vector3 direction = (target.position - transform.position).normalized;
 
         moveDirection = direction;
+
+        animator.SetFloat("Speed", rb.velocity.sqrMagnitude);
+
+        // Flip the sprite based on the direction of movement
+        if (follow)
+        { 
+            if (moveDirection.x > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1); // Face right
+            }
+            else if (moveDirection.x < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1); // Face left
+            }
+        }
 
     }
 

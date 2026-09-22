@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 20.0f;
 
-
     void Start()
     {
 
@@ -57,6 +56,16 @@ public class PlayerMovement : MonoBehaviour
 
         // Flip the sprite based on the direction of movement
 
+        if (horizontal > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1); // Face right
+        }
+        else if (horizontal < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1); // Face left
+        }
+
+        /* 
         if (horizontal < 0)
         {
             // Flip the sprite to face left
@@ -69,6 +78,17 @@ public class PlayerMovement : MonoBehaviour
 
             sprite.flipX = false;
         }
+
+        float moveInput = Input.GetAxisRaw("Horizontal");
+
+        if (moveInput > 0)
+        { 
+            transform.localScale = new Vector3(1, 1, 1); // Face right
+        }
+        else if (moveInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1); // Face left
+        }   */
     }
 
     void FixedUpdate()
@@ -93,6 +113,4 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-
-
 }
