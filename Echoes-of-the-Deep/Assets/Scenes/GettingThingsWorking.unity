@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   player: {fileID: 5466571665983181357}
-  attackRange: 1
+  attackRange: 3
   attackCooldown: 1
   attackTimer: 0
 --- !u!50 &368069060
@@ -1138,8 +1138,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.7609186, y: 2.7609186}
+  m_Offset: {x: -0.022518158, y: 0.15762544}
+  m_Size: {x: 1.8151627, y: 1.815165}
   m_Direction: 0
 --- !u!95 &368069063
 Animator:
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 2068718357}
-  attackRange: 5
+  attackRange: 4
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
