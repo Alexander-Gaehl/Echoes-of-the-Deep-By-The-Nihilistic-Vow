@@ -1039,8 +1039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff4d9fc5fc62ed46bb39fc52bcf03f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  player: {fileID: 1161712318}
+  moveSpeed: 3
+  player: {fileID: 5466571665983181357}
   attackRange: 1
   attackCooldown: 1
   attackTimer: 0
@@ -6775,6 +6775,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343100dcc968a834399c5e478b107374, type: 3}
+--- !u!4 &5466571665983181357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3356016267161089295, guid: 343100dcc968a834399c5e478b107374, type: 3}
+  m_PrefabInstance: {fileID: 5466571665983181356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8266646165754794744
 PrefabInstance:
   m_ObjectHideFlags: 0
