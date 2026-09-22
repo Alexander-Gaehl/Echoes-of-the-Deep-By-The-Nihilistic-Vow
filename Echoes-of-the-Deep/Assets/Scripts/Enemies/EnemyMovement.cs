@@ -31,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
-        attackScript = GetComponent<EnemyAttack>();
+        enemyAttack = GetComponent<EnemyAttack>();
 
     }
 
@@ -79,10 +79,9 @@ public class EnemyMovement : MonoBehaviour
 
             // Flip the sprite based on the direction of movement
             if (follow)
-        { 
             if (moveDirection.x > 0)
             {
-                HandleSpriteFipping();
+                HandleSpriteFlipping();
             }
         }
 
@@ -103,7 +102,7 @@ public class EnemyMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag ("Player")
+        if (collision.CompareTag ("Player"))
         {
             follow = true;
         }
@@ -113,7 +112,7 @@ public class EnemyMovement : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
 
-        if (collision.CompareTag ("Player")
+        if (collision.CompareTag ("Player"))
         {
             follow = false;
         }

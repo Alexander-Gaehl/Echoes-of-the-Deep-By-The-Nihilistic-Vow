@@ -10,7 +10,7 @@ public class EnemyAttack : MonoBehaviour
     public Transform attackPoint; // The point from which the attack is initiated
     public float attackRange = 0.5f; // The range of the attack
     public LayerMask playerLayer; // The layer that the player is on
-    public int damage = 20; // The amount of damage the attack does
+    public float damage = 20; // The amount of damage the attack does
 
     // Start is called before the first frame update
     void Start()
@@ -27,15 +27,23 @@ public class EnemyAttack : MonoBehaviour
     public void DealDamage()
     {
         // Detects players in range of the attack
-        Collider2D[] hitPlayers = Physics2D.OverlapCircle(attackPoint.position, attackRange, playerLayer);
+        Collider2D hitPlayers = Physics2D.OverlapCircle(attackPoint.position, attackRange, playerLayer);
 
         // Damages the player
-        foreach (Collider2D player in hitPlayers)
+        if (hitPlayers != null)
         {
-            // Assuming the player has a PlayerHealth component that handles taking damage
-            if (player.TryGetComponent<PlayerHealth>(out PlayerHealth health))
+            if (hitPlayers.TryGetComponent<PlayerHealth>(out PlayerHealth health))
             {
-                health.TakeDamage(damage);
+                health.health -= damage;
+
+                Debug.Log("Enemy has attacked! Current Health: " + health.health);
+
+                // Check if the player's health has reached 0
+                if (health.health <= 0)
+                {
+                    health.health = 0;
+                    Debug.Log("Player has died!");
+                }
             }
         }
     }
