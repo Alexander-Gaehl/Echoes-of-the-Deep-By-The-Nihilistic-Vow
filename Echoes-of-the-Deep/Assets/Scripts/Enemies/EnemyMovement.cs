@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Animator animator;
 
-    public Transform target;
+    public Transform player;
 
     Vector2 moveDirection;
 
@@ -38,21 +38,21 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null)
+        if (player == null)
         {
             rb.velocity = Vector2.zero;
             animator.SetFloat("Speed", 0);
             return;
         }
 
-        Vector3 direction = (target.position - transform.position).normalized;
+        Vector3 direction = (player.position - transform.position).normalized;
 
         moveDirection = direction;
 
         animator.SetFloat("Speed", rb.velocity.sqrMagnitude);
 
         // Calculate the distance to the target
-        float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // If the enemy is within attack range, stop moving and attack
         if (follow && distanceToPlayer <= attackRange)
@@ -122,9 +122,9 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (target == null) return;
+        if (player == null) return;
 
-        float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // Move towards the player if follow is true and the enemy is not within attack range   
         if (follow && distanceToPlayer > attackRange)
