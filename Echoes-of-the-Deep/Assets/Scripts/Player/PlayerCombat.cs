@@ -36,18 +36,27 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
+
+
         lastClickTime = Time.time;
+
         comboCount++;
 
-        // Reset combo count if it exceeds the maximum allowed combo
+        // Reset combo if the combo finishes
         if (comboCount > 3)
         {
+
             ResetCombo();
+
         }
 
         // Update Animator parameters based on combo count
+
         anim.SetInteger("ComboCount", comboCount);
+
         anim.SetTrigger("Attack");
+
+
     }
 
     // Reset combo count and Animator parameter
