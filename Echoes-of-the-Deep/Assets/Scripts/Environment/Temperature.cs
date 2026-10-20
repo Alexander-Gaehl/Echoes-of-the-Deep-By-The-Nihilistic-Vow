@@ -28,6 +28,7 @@ public class Temperature : MonoBehaviour
 			timer = 0;
 			ImageTemp.fillAmount = 0f;
 			Debug.Log("You Froze to Death.");
+
 		}
 	}
 
