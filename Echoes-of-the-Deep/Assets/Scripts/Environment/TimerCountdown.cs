@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.DebugUI;
 
 public class TimerCountdown : MonoBehaviour
 {
-	[SerializeField] TextMeshProUGUI TimerText;
+	[SerializeField] TextMeshProUGUI timerText;
 	[SerializeField] float remainingTime;
 
 	void Update()
@@ -21,8 +22,6 @@ public class TimerCountdown : MonoBehaviour
 			SceneManager.LoadScene("Profile");
 		}
 
-		int minutes = Mathf.FloorToInt(remainingTime / 60);
-		int seconds = Mathf.FloorToInt(remainingTime % 60);
-		TimerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+		timerText.text = string.Format("{0:D2}:{1:D2}", (Mathf.RoundToInt(remainingTime) / 60), (Mathf.RoundToInt(remainingTime) % 60));
 	}
 }

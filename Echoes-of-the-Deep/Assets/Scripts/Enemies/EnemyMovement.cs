@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     public float attackRange = 1f; // The range at which the enemy will stop moving and start attacking
     public float attackCooldown = 1f; // The cooldown time between attacks
     public float attackTimer = 0f; // A timer to keep track of the time since the last attack
-    private EnemyAttack enemyAttack; // Reference to the EnemyAttack script
+    public EnemyAttack enemyAttack; // Reference to the EnemyAttack script
 
     void Awake()
     {

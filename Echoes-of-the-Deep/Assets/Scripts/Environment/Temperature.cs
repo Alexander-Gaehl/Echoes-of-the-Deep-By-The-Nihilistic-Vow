@@ -5,37 +5,67 @@ using UnityEngine.UI;
 
 public class Temperature : MonoBehaviour
 {
-	public Image ImageTemp;
+
+	public Image imageTemp;
+
 	public float duration = 30f;
 
 	private float timer;
 
+	public bool tempDamage;
+
+
 	void Start()
 	{
+
 		timer = duration;
-		ImageTemp.fillAmount = 1f;
+
+		imageTemp.fillAmount = 1f;
+
 	}
+
 
 	void Update()
 	{
+
+
 		if (timer > 0)
 		{
+
 			timer -= Time.deltaTime;
-			ImageTemp.fillAmount = timer / duration;
-		}
-		else
-		{
-			timer = 0;
-			ImageTemp.fillAmount = 0f;
-			Debug.Log("You Froze to Death.");
+
+			imageTemp.fillAmount = timer / duration;
+
+			tempDamage = false;
 
 		}
+
+
+		else
+		{
+
+			timer = 0f;
+
+			imageTemp.fillAmount = 0f;
+
+			Debug.Log("You Froze to Death.");
+
+			tempDamage = true;
+
+		}
+
 	}
+
 
 	public void AddTime(float time)
 	{
+
 		timer += time;
+
 		timer = Mathf.Min(timer, duration);
-		ImageTemp.fillAmount = timer / duration;
+
+		imageTemp.fillAmount = timer / duration;
+
 	}
+
 }

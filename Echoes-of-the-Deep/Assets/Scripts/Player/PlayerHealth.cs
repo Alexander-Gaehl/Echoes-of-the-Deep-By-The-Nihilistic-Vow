@@ -8,25 +8,14 @@ public class PlayerHealth : MonoBehaviour
 
     private float startingHealth = 100f;
 
-    public float health;
+    public float health = 100f;
 
-
-    public GameObject healthBar;
-
-    private Image hlthBarImg;
-
-
-    private void Awake()
-    {
-    
-        hlthBarImg = healthBar.GetComponent<Image>();
-
-    }
+    public Image healthBarImage;
 
     private void Update()
     {
         
-        hlthBarImg.fillAmount = health / startingHealth;
+        healthBarImage.fillAmount = health / startingHealth;
 
     }
 

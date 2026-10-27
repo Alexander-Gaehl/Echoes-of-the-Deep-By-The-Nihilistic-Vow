@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,33 +21,41 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI m_RadDevAmnt;
     public TextMeshProUGUI m_MutDevAmnt;
 
-    enum GameState
+    private PlayerHealth playerHealth;
+
+
+    private void Start()
     {
 
-        MainMenu,
+        // Find the GameObject named "Enemy" in the hierarchy
+        GameObject playerObject = GameObject.Find("Player");
 
-        Playing,
+        if (playerObject != null)
+        {
+            // Get the script component attached to that GameObject
+            playerHealth = playerObject.GetComponent<PlayerHealth>();
 
-        Dead,
+        }
 
-        Hmmm,
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        DontDestroyOnLoad(gameObject);
 
         m_TempDevAmnt.text = ($"Temp {TempDevAmnt}");
         m_RadDevAmnt.text = ($"Rad {RadDevAmnt}");
         m_MutDevAmnt.text = ($"Mut {MutDevAmnt}");
+
+
+        float value = playerHealth.health;
+
+        if (value <= 0)
+        {
+
+            SceneManager.LoadScene("GAMEOVER");
+
+        }
 
     }
 }

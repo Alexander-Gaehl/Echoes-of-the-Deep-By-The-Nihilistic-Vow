@@ -512,6 +512,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &39445416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4755761418129831393, guid: 343100dcc968a834399c5e478b107374, type: 3}
+  m_PrefabInstance: {fileID: 5466571665983181356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &50164192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3675,8 +3680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5046ba8aea4a11d4db47a351b8efaef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageTemp: {fileID: 217298235}
-  duration: 60
+  imageTemp: {fileID: 217298235}
+  duration: 30
+  tempDamage: 0
 --- !u!114 &655505916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3689,8 +3695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4436ff0f20068764ca8691bd2c1b488d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimerText: {fileID: 203436994}
-  remainingTime: 420
+  timerText: {fileID: 203436994}
+  remainingTime: 600
 --- !u!114 &655505917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7322,7 +7328,7 @@ GameObject:
   - component: {fileID: 1354702905}
   - component: {fileID: 1354702904}
   m_Layer: 0
-  m_Name: Square
+  m_Name: MapBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10443,6 +10449,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1818832751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 591061254370835160, guid: ad920cee1c707b34e9999211951e713e, type: 3}
+  m_PrefabInstance: {fileID: 7028465211089609065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac5ada732ab3b044bc5a3e08ad9405f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1822205322
 GameObject:
   m_ObjectHideFlags: 0
@@ -12440,13 +12457,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4755761418129831393, guid: 343100dcc968a834399c5e478b107374, type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 5466571665983181365}
   m_SourcePrefab: {fileID: 100100000, guid: 343100dcc968a834399c5e478b107374, type: 3}
 --- !u!4 &5466571665983181357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3356016267161089295, guid: 343100dcc968a834399c5e478b107374, type: 3}
   m_PrefabInstance: {fileID: 5466571665983181356}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5466571665983181365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39445416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c51024586aae9469c86d085003287b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  healthBarImage: {fileID: 1084990544}
 --- !u!1001 &7028465211089609065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12455,10 +12489,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 591061254370835160, guid: ad920cee1c707b34e9999211951e713e, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 2041154987300308188, guid: ad920cee1c707b34e9999211951e713e, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 5466571665983181357}
+    - target: {fileID: 2041154987300308188, guid: ad920cee1c707b34e9999211951e713e, type: 3}
+      propertyPath: enemyAttack
+      value: 
+      objectReference: {fileID: 1818832751}
     - target: {fileID: 4820387347665652536, guid: ad920cee1c707b34e9999211951e713e, type: 3}
       propertyPath: m_SortingOrder
       value: 1
