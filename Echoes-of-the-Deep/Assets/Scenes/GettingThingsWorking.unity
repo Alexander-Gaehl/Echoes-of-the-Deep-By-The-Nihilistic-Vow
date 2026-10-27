@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e3b012c499e9d469f5df605dfad342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmount: 10
+  timeAmount: 15
 --- !u!61 &294278617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3476,7 +3476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e3b012c499e9d469f5df605dfad342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmount: 10
+  timeAmount: 15
 --- !u!1 &651903474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,7 +3705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImageRad: {fileID: 1530458021}
   fillSpeed: 0.009
-  targetFillAmount: 60
+  targetFillAmount: 100
 --- !u!1 &657934430
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,7 +4651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e3b012c499e9d469f5df605dfad342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmount: 10
+  timeAmount: 15
 --- !u!61 &867145957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9420,7 +9420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e3b012c499e9d469f5df605dfad342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmount: 10
+  timeAmount: 15
 --- !u!61 &1663262249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10734,7 +10734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e3b012c499e9d469f5df605dfad342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmount: 10
+  timeAmount: 15
 --- !u!61 &1887336189
 BoxCollider2D:
   m_ObjectHideFlags: 0

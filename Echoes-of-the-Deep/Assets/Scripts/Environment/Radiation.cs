@@ -7,7 +7,7 @@ public class Radiation : MonoBehaviour
 {
 	public Image ImageRad;
 	public float fillSpeed = 0.009f;
-	public float targetFillAmount = 60f;
+	public float targetFillAmount = 100f;
 
 	void Update() 
 	{
