@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Radiation : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class Radiation : MonoBehaviour
 		{
 			ImageRad.fillAmount = Mathf.MoveTowards(ImageRad.fillAmount, targetFillAmount, fillSpeed * Time.deltaTime);
 		}
+		/*else
+		{
+			ImageRad.fillAmount = 100f;
+			Debug.Log("You Died to Radiation Poisoning");
+			SceneManager.LoadScene("GAMEOVER");
+		}*/
 	}
 
 	public void setProgress(float progressPercent)
