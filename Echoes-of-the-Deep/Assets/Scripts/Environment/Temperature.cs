@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class Temperature : MonoBehaviour
 {
@@ -28,7 +30,7 @@ public class Temperature : MonoBehaviour
 			timer = 0;
 			ImageTemp.fillAmount = 0f;
 			Debug.Log("You Froze to Death.");
-
+			SceneManager.LoadScene("GAMEOVER");
 		}
 	}
 

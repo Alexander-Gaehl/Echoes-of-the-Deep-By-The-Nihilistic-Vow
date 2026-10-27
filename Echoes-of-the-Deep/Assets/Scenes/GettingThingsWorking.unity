@@ -3690,7 +3690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 203436994}
-  remainingTime: 420
+  remainingTime: 300
 --- !u!114 &655505917
 MonoBehaviour:
   m_ObjectHideFlags: 0

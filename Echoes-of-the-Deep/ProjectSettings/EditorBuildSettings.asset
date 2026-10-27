@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Skill Tree.unity
     guid: e46515a30d81d194998f2f59416bafce
+  - enabled: 1
+    path: Assets/Scenes/GAMEOVER.unity
+    guid: a12a9166d59c9e241a9213232651b597
   m_configObjects: {}
