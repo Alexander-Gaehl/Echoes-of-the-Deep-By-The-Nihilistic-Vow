@@ -26,4 +26,9 @@ public class Radiation : MonoBehaviour
 	{
 		setProgress(targetFillAmount + amount);
 	}
+
+	public void removeProgress(float amount) 
+	{
+		ImageRad.fillAmount -= amount;
+	}
 }

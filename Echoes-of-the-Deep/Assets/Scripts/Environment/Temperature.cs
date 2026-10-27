@@ -8,7 +8,7 @@ using UnityEditor;
 public class Temperature : MonoBehaviour
 {
 	public Image ImageTemp;
-	public float duration = 30f;
+	public float duration = 60f;
 
 	private float timer;
 
